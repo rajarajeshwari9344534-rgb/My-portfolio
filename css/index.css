@@ -86,15 +86,43 @@ nav a:hover::after {
 .hero h1 {
   font-size: 60px;
   margin-bottom: 10px;
+  color: #38bdf8;
 }
 
 .badge {
-  display: inline-block;
+
   background: #f0f3f4;
   color: #020617;
   padding: 8px 20px;
   border-radius: 20px;
   margin: 15px 0;
+  border: none;
+}
+
+
+.badge:hover  {
+
+    filter: drop-shadow(0 0 10px #ffdeff);
+    
+}
+.bio{
+  margin-top: 20px;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+}
+
+.bio a{
+  text-decoration: none;
+  color: #010710;
+  
+}
+
+
+.bio:hover{
+  display: block;
+  filter: drop-shadow(0 0 10px #ffdeff);
+  background-color: #bdddf8;
 }
 
 .hero-img img {
@@ -116,29 +144,75 @@ nav a:hover::after {
   }
 }
 
-/* ================= ABOUT ================= */
+/* ABOUT SECTION */
 .section {
   min-height: 100vh;
   padding: 120px 100px;
+}
+
+/* Top Row */
+.about-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 60px;
 }
 
 .about-img img {
   width: 320px;
   border-radius: 30px;
-  
 }
+
+/* About Card */
+
 
 .card {
   max-width: 700px;
-  background: white;
+  background: #ffffff;
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.15);
   animation: fadeUp 1s ease forwards;
 }
+
+
+
+/* Hobbies Bottom */
+.hobbies-container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.hobby-card {
+  width: 220px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.hobby-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.hobby-card h3 {
+  font-size: 16px;
+  color: #1e293b;
+}
+
+.hobby-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 18px #c7d2fe;
+}
+
+
 
 /* ================= SKILLS ================= */
 .section-dark {
@@ -198,6 +272,9 @@ nav a:hover::after {
 .bar.team span { width: 99%; }
 
 /*SKILL BOXES  */
+
+
+
 .box-container {
   flex: 1;
   display: grid;
@@ -227,6 +304,40 @@ nav a:hover::after {
     font-size: 20px;
     margin-top: 8px;
 }
+
+/* achievements*/
+.section h2{
+  color: #f0f3f4;
+}
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.achievement-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.achievement-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.achievement-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 18px #c7d2fe;
+}
+
 
 /*  PROJECTS  */
 .section-py {
