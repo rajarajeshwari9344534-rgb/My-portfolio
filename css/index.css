@@ -12,7 +12,7 @@ html {
 
 body {
   background: linear-gradient(90deg, #60656b, #040e1b);
-  color: #0f172a;
+  color: #09090b;
 }
 
 /* ================= NAV ================= */
@@ -264,12 +264,14 @@ nav a:hover::after {
   from { width: 0; }
 }
 
-.bar.html span { width: 95%; }
-.bar.css span { width: 90%; }
-.bar.python span { width: 85%; }
-.bar.sql span { width: 80%; }
-.bar.ps span { width: 95%; }
-.bar.team span { width: 99%; }
+.bar.html span { width: 70%; }
+.bar.css span { width: 70%; }
+.bar.python span { width: 75%; }
+.bar.sql span { width: 60%; }
+.bar.ps span { width: 75%; }
+.bar.team span { width: 80%; }
+.bar.comm span{width: 90%;}
+
 
 /*SKILL BOXES  */
 
@@ -348,7 +350,9 @@ nav a:hover::after {
 
 .section-py h2{
     margin-bottom: 30px;
+    
 }
+
 
 .project-card {
   background: #f8fafc;
