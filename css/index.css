@@ -144,7 +144,7 @@ nav a:hover::after {
   padding: 10px 22px;
   border-radius: 20px;
   border: none;
-  background: #bdddf8;
+  background: #eef0f1;
   cursor: pointer;
 
   opacity: 0;
@@ -492,7 +492,7 @@ nav a:hover::after {
 .bar.python span { width: 75%; }
 .bar.sql span { width: 60%; }
 .bar.ps span { width: 75%; }
-.bar.team span { width: 80%; }
+.bar.team span { width: 90%; }
 .bar.com span { width: 90%; }
 
 /* ================= RIGHT : BOXES ================= */
@@ -509,14 +509,11 @@ nav a:hover::after {
   border-radius: 18px;
   text-align: center;
   color: #020617;
-
+  
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.box p{
-  font-size: 90px;
 
-}
 
 /* HOVER EFFECT */
 .box:hover {
@@ -526,13 +523,13 @@ nav a:hover::after {
 
 /* BOX TEXT */
 .box h3 {
-  font-size: 28px;
+  font-size: 38px;
   color: #38bdf8;
   transition: transform 0.3s ease;
 }
 
 .box p {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 8px;
   transition: transform 0.3s ease;
 }
@@ -551,12 +548,7 @@ nav a:hover::after {
   transform: scale(0.95);
 }
 
-/* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
-  .row2 {
-    flex-direction: column;
-  }
-}
+
 
 
 
@@ -648,18 +640,16 @@ nav a:hover::after {
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-/* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
-  .achievement-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-}
 
 
 /* PROJECTS SECTION */
 .projects-section {
   min-height: 100vh;
   padding: 120px 100px;
+}
+
+.small{
+  font-size: 17px;
 }
 
 /* TITLE ANIMATION */
@@ -689,7 +679,6 @@ nav a:hover::after {
   display: flex;
   gap: 30px;
   align-items: center;
-
   background: #f8fafc;
   padding: 30px;
   border-radius: 18px;
@@ -790,21 +779,6 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .projects-section {
-    padding: 80px 20px;
-  }
-
-  .project-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .project-img {
-    width: 100%;
-  }
-}
 
 
 
