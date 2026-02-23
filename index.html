@@ -1,491 +1,443 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title> Rajarajeshwari | Full Stack Developer Trainee </title>
-  <link rel="stylesheet" href="css/index.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
 
-<!-- NAV -->
-<nav>
-  <h2 class="logo">My portfolio</h2>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#achievements">Achievements</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  </ul>
-</nav>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-<!-- HOME --> 
-<section id="home" class="hero"> 
-  <div class="my">
-  <h2>Hello I'am </h2>
-  <h1>Rajarajeshwari</h1>
-  <button class="badge">Software Developer Trainee</button>
-  <p class="paragraph"> I'm a Full Stack Developer and UI/UX Designer, <br>
-    currently training as a Software Developer at<br> Freshworks STS Software Academy.
-    I enjoy building complete web applications from design to backend.
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="nav-bar">
+      <h2>&lt; Developer /&gt;</h2>
+
+      <ul class="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="./pages/about.html">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="my-intro">
+        <h2>Hello I'm</h2>
+        <h1>&lt; Rajarajeshwari /&gt;</h1>
+
+        <button class="badge">Software Developer Trainee</button>
+
+        <p class="paragraph">
+          I'm a Full Stack Developer and UI/UX Designer, <br />
+          currently training as a Software Developer at<br />
+          Freshworks STS Software Academy. I enjoy building complete web
+          applications from design to backend.
+        </p>
+        <button class="bio">
+          <a href="./pages/about.html">About me ✨</a>
+        </button>
+      </div>
+
+      <div class="hero-img">
+        <img src="./assets/raji.jpg" alt="My image" />
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="inner">
+        <div class="section-header">
+          <div class="section-tag">// my expertise</div>
+          <h2 class="section-title">Tech & Other Skills</h2>
+          <p class="section-subtitle">
+            A snapshot of my technical toolbox — constantly learning and
+            leveling up.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-category">
+            <h2><i class="fas fa-palette"></i> Frontend</h2>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">🌐 HTML </span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">⚡ JavaScript</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="65"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">🌐 CSS</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill cyan" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-category">
+            <h2><i class="fas fa-server"></i> Backend</h2>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">🐍 Python</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">⚡ FastAPI</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">🗄️ SQL</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill pink" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-category">
+            <h2><i class="fas fa-tools"></i> Tools & Others</h2>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">🐙 Git & GitHub</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">🎨 UI/UX Design</span>
+                <span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill cyan" data-width="72"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Team work & Comm unication</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill pink" data-width="65"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech chips -->
+        <h1 class="up">Continuous Upskilling</h1>
+
+        <div class="tech-icons">
+          <div class="tech-chip">
+            <i class="fab fa-html5" style="color: #e34c26"></i> HTML5
+          </div>
+          <div class="tech-chip">
+            <i class="fab fa-css3-alt" style="color: #264de4"></i> CSS3
+          </div>
+          <div class="tech-chip">
+            <i class="fab fa-js-square" style="color: #f7df1e"></i> JavaScript
+          </div>
+          <div class="tech-chip">
+            <i class="fab fa-react" style="color: #61dafb"></i> React
+          </div>
+          <div class="tech-chip">
+            <i class="fab fa-node-js" style="color: #68a063"></i> Node.js
+          </div>
+          <div class="tech-chip">
+            <i class="fas fa-leaf" style="color: #47a248"></i> MongoDB
+          </div>
+          <div class="tech-chip"><i class="fab fa-github"></i> GitHub</div>
+          <div class="tech-chip">
+            <i class="fab fa-figma" style="color: #f24e1e"></i> Figma
+          </div>
+          <div class="tech-chip">
+            <i class="fab fa-python" style="color: #3776ab"></i> Python
+          </div>
+          <div class="tech-chip">
+            <i class="fas fa-database" style="color: #4db33d"></i> SQL
+          </div>
+
+          <div class="tech-chip">
+            <i class="fas fa-bolt" style="color: #009688"></i> FastAPI
+          </div>
+
+          <div class="tech-chip">
+            <i class="fas fa-brain" style="color: #7c3aed"></i> Problem Solving
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Projects" class="projects" >
+      <div class="projects-header">
+        <div class="tag">// what I've built</div>
+        <h2>My Projects</h2>
+<p>Hands-on projects demonstrating my full-stack development and design skills.</p>
+      </div>
+
+      <div class="projects-grid" >
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="./assets/kids.png" alt="project" />
+
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+
+          <h3>Kids Wear Website</h3>
+
+          <p>
+            Designed and built a static website for kids wear with a clean and
+            colorful UI.
+          </p>
+
+          <div class="project-buttons">
+            <button class="live"><a href="https://rajarajeshwari9344534-rgb.github.io/kids_wear/">🔗 Live Demo</a></button>
+            <button class="git"><a href="https://github.com/rajarajeshwari9344534-rgb/kids_wear">🐙 GitHub</a></button>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+
+        <div class="project-card">
+          <img src="./assets/justice_nest.png" alt="project" />
+
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Java Script</span>
+            <span>FastAPI</span>
+            <span>MysQL</span>
+          </div>
+
+          <h3>Justice Nest — Legal Platform</h3>
+
+          <p>
+            A full-stack legal complaint management platform connecting citizens
+            with verified lawyers.
+          </p>
+
+          <div class="project-buttons">
+            <button class="live"><a href="https://justice-nest-c8cc7c.netlify.app/">🔗 Live Demo</a></button>
+            <button class="git"><a href="https://github.com/rajarajeshwari9344534-rgb/Justice_Nest">🐙 GitHub</a></button>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <img src="./assets/fastapi.png" alt="project" />
+
+          <div class="project-tags">
+            <span>FastAPI</span>
+            <span>Python</span>
+            <span>MysQL</span>
+          </div>
+
+          <h3>Backend API System</h3>
+
+          <p>
+            Developed REST APIs with database integration and Swagger
+            documentation.
+          </p>
+
+          <div class="project-buttons">
+            <button class="live"><a href="http://127.0.0.1:8000/docs">🔗 Live Demo</a></button>
+            <button class="git"><a href="https://github.com/rajarajeshwari9344534-rgb/Justice_Nest_backend">🐙 GitHub</a></button>
+          </div>
+        </div>
+
+        <!-- Project 4-->
+        <div class="project-card">
+          <img src="./assets/figma.png" alt="project" />
+
+          <div class="project-tags">
+            <span>Figma</span>
+          </div>
+
+          <h3>Website Wireframe Design</h3>
+
+          <p>
+            Created wireframes using Figma to plan layout, structure, and user
+            flow.
+          </p>
+
+          <div class="project-buttons">
+            <button class="live"><a href="https://www.figma.com/design/HIMy34boMBiLjibnm2wibA/Wireframe?node-id=97-12&p=f">🔗 Live Demo</a></button>
+          </div>
+        </div>
+
+    
+
+        <!-- Project 5-->
+        <div class="project-card">
+          <img src="./assets/product.jpg" alt="project" />
+
+          <div class="project-tags">
+            <span> Teamwork</span>
+            <span>Problem Solving </span>
+            <span>Product Planning</span>
+            <span> Marketing Strategy</span>
+          </div>
+
+          <h3>Thug Warriors – Life Skill & Business Project</h3>
+
+          <p>
+            A 6-member team project focused on developing a Gas Leakage Detector
+            solution to improve safety.
+          </p>
+
+          <p>
+            The project covered basic product design, pricing, and marketing
+            strategies.
+          </p>
+        </div>
+
+
+
+            <!-- Project 6-->
+        <div class="project-card">
+          <img src="./assets/team.jpg" alt="project" />
+
+          <div class="project-tags">
+            <span>Team Collaboration</span>
+            <span>Communication</span>
+            <span>Responsibility</span>
+            <span>Creative Thinking</span>
+            <span>Decision Making</span>
+            <span>Adaptability</span>
+            <span>Stress Management</span>
+          </div>
+
+          <h3>Thug Warriors – Life Skill Project</h3>
+
+          <p>
+            A team-based life skill project where each member explained their
+            strengths, mindset, and working style to help the team understand
+            one another better and collaborate effectively.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section"  id="Contact">
+
+  <div class="connect-tag">// let's connect</div>
+
+  <h2 class="contact-title">
+    Get In <span>Touch</span>
+  </h2>
+
+  <p class="contact-desc">
+    I'm open to internship opportunities, collaborations, and entry-level roles.
+    Let’s build something meaningful together!
   </p>
-  <button class="bio"> <a href="#about">About me ✨</a>
-    
-  </button>
-  </div>
-  <div class="hero-img">
-    <img src="./assets/raji.jpg" alt="profile">
-  </div>
-</section>
 
+  <div class="contact-cards">
 
-
-<!-- ABOUT -->
-<section id="about" class="section">
- <h1 class="abu">About me</h1>
-  <!-- Top About Row -->
-  <div class="about-wrapper">
-    <div class="about-img">
-      <img src="./assets/raji.jpg" alt="profile">
+    <!-- LinkedIn -->
+    <div class="contact-card">
+      <div class="icon-box linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+      <div class="card-text">
+        <small>Connect on</small>
+        <a href="https://www.linkedin.com/in/rajarajeshwari-s-7a7666374/"><h4>LinkedIn</a></h4>
+      </div>
     </div>
 
-    <div class="card">
-
-      <p>
-   I am Rajarajeshwari, a motivated software developer who transitioned into the field of technology after completing my 12th grade in Bio-Maths. I successfully completed my software engineering training at Freshworks STS Software Academy, where I built a strong foundation in software development.
-
-I have a strong interest in front-end development and built my first static website within two months of learning, which reflects my ability to learn quickly and apply concepts effectively. I have hands-on experience with HTML, CSS, and JavaScript for front-end development, along with Python for back-end development, and experience working with PostgreSQL databases.
-
-I am passionate about building user-friendly and responsive web applications. I enjoy learning new technologies and continuously improving my skills through practical projects. My goal is to grow as a skilled Full Stack Developer.
-      </p>
-    </div>
-  </div>
-
-  <!-- Hobbies Section (Bottom) -->
-   <h2 class="hub">Hobbies</h2>
-  <div class="hobbies-container">
-
-
-<div class="hobby-card">
-  <img src="https://cdn-icons-png.flaticon.com/512/2970/2970785.png" alt="Pencil Art">
-  <h3>Artist</h3>
-</div>
-
-<div class="hobby-card">
-  <img src="https://cdn-icons-png.flaticon.com/512/857/857455.png" alt="Sports">
-  <h3>Sports</h3>
-</div>
-    
-<div class="hobby-card">
-  <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" alt="Music">
-  <h3>Music</h3>
-</div>
-
-<!-- Cooking -->
-<div class="hobby-card">
-  <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Cooking">
-  <h3>Cooking</h3>
-</div>
-
-<!-- Traveling -->
-<div class="hobby-card">
-  <img src="https://cdn-icons-png.flaticon.com/512/69/69524.png" alt="Traveling">
-  <h3>Traveling</h3>
-</div>
-
-<!-- Makeup -->
-<div class="hobby-card">
-  <img src="https://uxwing.com/wp-content/themes/uxwing/download/beauty-fashion/makeup-icon.png"
- alt="Makeup">
-  <h3>Makeup</h3>
-</div>
-
-
-    
-  <div class="hobby-card">
-  <img src="https://cdn-icons-png.flaticon.com/512/2798/2798007.png" alt="Watching Movies">
-  <h3>Watching Movies</h3>
-</div>
-  </div>
-
-
-
-
-
-</section>
-
-<!-- Font Awesome (icons) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<!-- SKILLS -->
-<section id="skills" class="section-dark">
-  <h1 class="heading"><span>My</span> Skills</h1>
-
-  <div class="row2">
-
-    <!-- LEFT : SKILLS -->
-    <div class="skills">
-
-      <div class="progress">
-        <h3>
-          <span class="skill-name">
-            <i class="fa-brands fa-html5 html-icon"></i> HTML
-          </span>
-          <span>70%</span>
-        </h3>
-        <div class="bar html"><span></span></div>
+    <!-- GitHub -->
+    <div class="contact-card">
+      <div class="icon-box github">
+        <i class="fab fa-github"></i>
       </div>
-
-      <div class="progress">
-        <h3>
-          <span class="skill-name">
-            <i class="fa-brands fa-css3-alt css-icon"></i> CSS
-          </span>
-          <span>70%</span>
-        </h3>
-        <div class="bar css"><span></span></div>
+      <div class="card-text">
+        <small>Follow on</small>
+        <a href="https://github.com/rajarajeshwari9344534-rgb"><h4>Git Hub</a></h4>
       </div>
-
-      <div class="progress">
-        <h3>
-          <span class="skill-name">
-            <i class="fa-brands fa-python python-icon"></i> Python
-          </span>
-          <span>75%</span>
-        </h3>
-        <div class="bar python"><span></span></div>
-      </div>
-
-      <div class="progress">
-        <h3>
-          <span class="skill-name">
-            <i class="fa-solid fa-database sql-icon"></i> PostgreSQL
-          </span>
-          <span>60%</span>
-        </h3>
-        <div class="bar sql"><span></span></div>
-      </div>
-
-      <div class="progress">
-        <h3>
-          <span class="skill-name">
-            <i class="fa-solid fa-brain ps-icon"></i> Problem Solving
-          </span>
-          <span>75%</span>
-        </h3>
-        <div class="bar ps"><span></span></div>
-      </div>
-
-      <div class="progress">
-        <h3>
-          <span class="skill-name">
-            <i class="fa-solid fa-people-group team-icon"></i> Team Work
-          </span>
-          <span>90%</span>
-        </h3>
-        <div class="bar team"><span></span></div>
-      </div>
-
-      <div class="progress">
-        <h3>
-          <span class="skill-name">
-            <i class="fa-solid fa-comments com-icon"></i> Communication
-          </span>
-          <span>90%</span>
-        </h3>
-        <div class="bar com"><span></span></div>
-      </div>
-
     </div>
 
-    <!-- RIGHT : BOXES -->
-    <div class="box-container">
-      <div class="box">
-        <h3>3+</h3>
-        <p >Projects Completed</p>
+    <!-- Email -->
+    <div class="contact-card">
+      <div class="icon-box email">
+        <i class="fas fa-envelope"></i>
       </div>
-
-      <div class="box">
-        <h3>3+</h3>
-        <p>Awards</p>
-      </div>
-
-      <div class="box">
-        <h3>6+</h3>
-        <p>Skills</p>
-      </div>
-
-      <div class="box">
-        <h3>2+</h3>
-        <p>Technology Focus</p>
+      <div class="card-text">
+        <small>Reach via</small>
+        <a href="mailto:rajarajeshwari9344534@gmail.com"><h4>Email Me</a></h4>
       </div>
     </div>
 
   </div>
-</section>
-
-
-
-
-<!-- PROJECTS -->
-<section id="projects" class="projects-section">
-  <h2 class="projects-title">Projects</h2>
-
-  <!-- Project 1 -->
-  <div class="project-card">
-    <img src="./assets/kids.png"
-         alt="Kids Wear Website"
-         class="project-img"
-         loading="lazy">
-
-    <div class="project-content">
-      <h3>Kids Wear Website</h3>
-      <p>Designed and built a static  website for kids wear with a clean and colorful UI.</p>
-      <small class="small">HTML • CSS</small><br>
-      <a href="https://rajarajeshwari9344534-rgb.github.io/kids_wear/"
-         target="_blank"
-         rel="noopener noreferrer">
-        View Project
-      </a>
-    </div>
-  </div>
-
-  <!-- Project 2 -->
-  <div class="project-card">
-    <img src="./assets/figma.png"
-         alt="Website Wireframe Design"
-         class="project-img"
-         loading="lazy">
-
-    <div class="project-content">
-      <h3>Website Wireframe Design</h3>
-      <p>Created wireframes using Figma to plan layout, structure, and user flow.</p>
-      <small class="small">Figma</small><br>
-      <a href="https://www.figma.com/design/HIMy34boMBiLjibnm2wibA/Wireframe?node-id=97-12&p=f"
-         target="_blank"
-         rel="noopener noreferrer">
-        View Project
-      </a>
-    </div>
-  </div>
-
-  <!-- Project 3 -->
-  <div class="project-card">
-    <img src="./assets/fastapi.png"
-         alt="Backend API System"
-         class="project-img"
-         loading="lazy">
-
-    <div class="project-content">
-      <h3>Backend API System</h3>
-      <p>Developed REST APIs with database integration and Swagger documentation.</p>
-      <small class="small">Python • FastAPI • SQL</small><br>
-      <a href="#"
-         title="API runs on localhost">
-        API (Localhost)
-      </a>
-    </div>
-  </div>
-
-
-
-
-  <!-- Project 4 -->
-  <div class="project-card">
-    <img src="./assets/justice_nest.png"
-         alt="Justice Nest Dowry Complaint Website"
-         class="project-img"
-         loading="lazy">
-
-    <div class="project-content">
-      <h3>Justice Nest – Dowry Complaint Website</h3>
-      <p>
-        A full-stack complaint management system for reporting and tracking dowry cases.
-      </p>
-      <small class="small">HTML • CSS • Python • FastAPI • PostgreSQL</small><br>
-      <a href="https://rajarajeshwari9344534-rgb.github.io/Justice-Nest/index.html"
-         target="_blank"
-         rel="noopener noreferrer">
-        View Project
-      </a>
-    </div>
-      </div>
-
-      <!-- Project 5 -->
-<div class="project-card">
-  <img src="./assets/team.jpg"
-       alt="Thug Warriors Life Skill Project"
-       class="project-img"
-       loading="lazy">
-
-  <div class="project-content">
-    <h3>Thug Warriors – Life Skill Project</h3>
-
-    <p>
-      A team-based life skill project where each member explained their
-      strengths, mindset, and working style to help the team understand
-      one another better and collaborate effectively.
-    </p>
-
-   
-    <small class="small">
-      Team Collaboration • Communication 
-    </small><br>
-
-   
-  </div>
-</div>
-
-
-<!-- Life Skill Team Project -->
-<div class="project-card">
-  <img src="./assets/product.jpg"
-       alt="Thug Warriors Business Life Skill Project"
-       class="project-img"
-       loading="lazy">
-
-  <div class="project-content">
-    <h3>Thug Warriors – Life Skill & Business Project</h3>
-
-<p>
-  A 6-member team project focused on developing a Gas Leakage Detector solution
-  to improve safety.
-</p>
-
-<p>
-  The project covered basic product design, pricing, and marketing strategies.
-</p>
-
-
-   
-
-    <small class="small">
-      Teamwork • Problem Solving • Product Planning • Marketing Strategy
-    </small><br>
-
-    
-  </div>
-</div>
-
-
-
-    
 
 </section>
 
 
 
+  </body>
 
-<!---Achievements-->
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.querySelectorAll(".skill-fill").forEach((bar) => {
+              bar.style.width = bar.dataset.width + "%";
+            });
+          }
+        });
+      },
+      { threshold: 0.3 },
+    );
 
-<section id="achievements" class="section">
-  <h2 class="section-title">Achievements</h2>
-
-  <div class="achievement-grid">
-
-    <!-- Static Website -->
-    <div class="achievement-card">
-      <img src="./assets/IMG_20251103_132052.jpg" alt="Static Website Certificate">
-      <h3>Static Website Creation – 3rd Place</h3>
-      <p>Secured 3rd position using HTML & CSS (2025)</p>
-    </div>
-
-    <!-- Essay Writing -->
-    <div class="achievement-card">
-      <img src="./assets/tv.jpg" alt="Essay Writing">
-      <h3>District Level Essay Writing</h3>
-      <p>Runner-up – 12th Grade</p>
-    </div>
-
-  
-
-    <!-- Squad Lead -->
-    <div class="achievement-card">
-      <img src="./assets/me.jpg" alt="Best Squad Lead">
-      <h3>Best Squad Lead</h3>
-      <p>Recognized for leadership & teamwork</p>
-    </div>
-
-
-    <div class="achievement-card">
-      <img src="./assets/school.jpg" alt="Essay">
-      <h3>School Level Essay Writing</h3>
-      <p>Secured 1st Place</p>
-    </div>
-
-
-    
-    <div class="achievement-card">
-      <img src="./assets/product.jpg" alt="Best Squad Lead">
-        <h3>Product Building Challenge(Gas leakage Detector)</h3>
-      <p>Secured 2nd place</p>
-    </div>
-
-        <div class="achievement-card">
-      <img src="./assets/team.jpg" alt="Best Squad Lead">
-        <h3>Team Presentation</h3>
-      <p>Secured 2nd place</p>
-    </div>
-
-  </div>
-</section>
-
-
-<!--contact-->
-
-<section id="contact" class="contact-section">
-  <h2>Get In Touch</h2>
-
-  <div class="contact-container">
-
-    <!-- LEFT : CONTACT FORM -->
-    <div class="contact-form">
-      
-
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="text" placeholder="Your Subject">
-        <textarea rows="5" placeholder="Your Message"></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-
-    <!-- RIGHT : CONTACT INFO -->
-    <div class="contact-info">
-      <h1>Contact Me</h1>
-      <p>
-        I’m always open to discussing new projects,  
-        creative ideas, or opportunities to be part of your vision.
-      </p>
-
-      <a href="https://www.linkedin.com/in/rajarajeshwari-s-7a7666374/" class="contact-btn">Let’s Talk</a>
-    </div>
-
-  <div class="social-icons">
-  <!-- <a href="https://instagram.com/yourusername" target="_blank">
-    <i class="fab fa-instagram"></i>
-  </a> -->
-
-  <!-- <a href="https://wa.me/91XXXXXXXXXX" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a> -->
-
-  <a href="https://www.linkedin.com/in/rajarajeshwari-s-7a7666374/" target="_blank">
-    <i class="fab fa-linkedin-in"></i>
-  </a>
-
- <a href="https://github.com/rajarajeshwari9344534-rgb" target="_blank">
-  <i class="fab fa-github"></i>
-</a>
-</div>
-
-  </div>
-</section>
-
-</body>
+    document
+      .querySelectorAll("#skills .inner")
+      .forEach((el) => observer.observe(el));
+  </script>
 </html>
