@@ -1,5 +1,7 @@
 
-
+body{
+  margin: 0;
+}
 
 
 .nav-bar {
@@ -7,11 +9,9 @@
   background: rgb(111, 0, 230);
   color: #fff;  
   display: flex;
-  margin: 0;
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
-  padding: 8px;
   flex-wrap: wrap;
 }
 
