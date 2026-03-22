@@ -123,193 +123,130 @@ body{
 
 
 
+
+
 .journey {
   padding: 80px 10%;
-  background: #ffffff;
-  color: #0b0b0b;
+  background: #f9f9ff;
 }
 
 .journey-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .tag {
-  display: inline-block;
-  padding: 10px;
+  border: 2px solid #7c5cff;
+  padding: 8px 14px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #0c0c0c;
-  margin-bottom: 15px;
-  border: 2px solid #6b34ad;
-  font-size: 20px;
+  display: inline-block;
   font-weight: bold;
 }
 
 .journey-header h2 {
-  font-size: 42px;
-  margin-bottom: 10px;
+  font-size: 40px;
 }
 
+/* OUTER */
 
-/* TIMELINE */
-
-.timeline {
+.journey-scroll {
+  overflow: hidden;
   position: relative;
+  height: 600px;
+  border: 2px solid#5a00c7;
+  border-radius: 20px;
 }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 20px;
-  top: 0;
-  width: 7px;
-  height: 100%;
-  background: linear-gradient(#7c5cff,#00eaff);
+
+
+
+/* INNER TRACK */
+
+.scroll-track {
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: smoothScroll 45s linear infinite; 
 }
 
-.timeline-item {
-  display: grid;
-  grid-template-columns: 40px 1fr 280px;
-  gap: 30px;
-  margin-bottom: 40px;
-  align-items: center;
+/* hover stop */
+
+.scroll-track:hover {
+  animation-play-state: paused;
 }
 
-.timeline-dot {
-  width: 14px;
-  height: 14px;
-  background: #7d61ed;
-  border-radius: 50%;
-  margin-left: 43px;
-  margin-bottom: 200px;
-  box-shadow: 0 0 15px #7c5cff;
+/* CARD */
+
+.journey-card {
+height: 500px; 
+  min-width: 420px;   
+  max-width: 420px;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+  flex-shrink: 0;
+  
 }
 
-.timeline-content h3 {
-  font-size: 22px;
-  margin: 6px 0;
-}
-
-.timeline-content h4 {
-  color: #6610de;
-  font-size: 20px;
-
-    font-weight: 500;
+.journey-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 14px;
+  object-fit: cover;
+  overflow: hidden;
   margin-bottom: 10px;
+}
+
+.journey-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.journey-card p {
+  line-height: 1.7;
+  color: #444;
+  font-size: 17px;
 }
 
 .year {
-  color: #6b34ad;
-  font-size: 20px;
+  color: #7c5cff;
   font-weight: bold;
 }
 
-.timeline-content p {
-  color: #111112;
-  line-height: 1.6;
-  font-size: 18px;
-}
+/* ANIMATION */
 
-/* IMAGE SIDE */
-
-.timeline-image img {
-  width: 100%;
-  border-radius: 16px;
-  object-fit: cover;
-  border: 1px solid #6b34ad;
-  box-shadow: 0 10px 30px rgba(81, 1, 210, 0.397);
-  transition: 0.3s;
-}
-
-.timeline-image img:hover {
-  transform: scale(1.05);
-}
-
-/* 📱 MOBILE RESPONSIVE */
-
-@media (max-width: 768px) {
-  .timeline-item {
-    grid-template-columns: 40px 1fr;
+@keyframes smoothScroll {
+  0% {
+    transform: translateX(0);
   }
-
-  .timeline-image {
-    grid-column: span 2;
+  100% {
+    transform: translateX(-50%);
   }
 }
 
 
-/* wrapper */
 
-.hobby-network {
-  overflow: hidden;
-  position: relative;
-  padding: 40px 0;
-}
+/* FADE EFFECT (OPTIONAL PREMIUM) */
 
-.hobby-network h1{
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-/* ✨ CONNECTING LINE */
-
-.hobby-network::before {
+.journey-scroll::before,
+.journey-scroll::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  z-index: 2;
+}
+
+.journey-scroll::before {
   left: 0;
-  width: 200%;
-  height: 2px;
-  opacity: 0.4;
+  background: linear-gradient(to right, #f9f9ff, transparent);
 }
 
-/* moving row */
-
-.hobby-track {
-  display: flex;
-  gap: 30px;
-  width: max-content;
-  animation: hobbyMove 22s linear infinite;
-  align-items: center;
+.journey-scroll::after {
+  right: 0;
+  background: linear-gradient(to left, #f9f9ff, transparent);
 }
 
-/* card */
-
-.hobby-card {
-  min-width: 200px;
-  height: 140px;
-  background: #e6e6e6;
-  border-radius: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
-  position: relative;
-  z-index: 1;
-  transition: 0.3s;
-}
-
-.hobby-card img {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-}
-
-.hobby-card p {
-  font-weight: 600;
-  color: #1f2937;
-}
-
-.hobby-card:hover {
-  transform: translateY(-8px);
-}
-
-/* animation */
-
-@keyframes hobbyMove {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
